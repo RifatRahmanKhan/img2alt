@@ -12,7 +12,7 @@ first_captions_dict = {}
 
 # Extract the first caption for each image
 for line in captions_data:
-    parts = line.strip().split(",")
+    parts = line.strip().split(",", 1)
 
     # Check if the line has the expected format
     if len(parts) == 2:
@@ -29,4 +29,4 @@ for line in captions_data:
 captions_array = np.array(list(first_captions_dict.values()))
 
 # Print the captions array
-print(captions_array)
+print(len(captions_array))
