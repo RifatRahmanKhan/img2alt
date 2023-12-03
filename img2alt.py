@@ -54,8 +54,8 @@ num_train = int(len(image_files) * train_ratio)
 num_test = len(image_files) - num_train
 
 # Create directories for training and testing images
-train_folder = "path/to/your/train/folder"
-test_folder = "path/to/your/test/folder"
+train_folder = "../archive/train/images"
+test_folder = "../archive/test/images"
 os.makedirs(train_folder, exist_ok=True)
 os.makedirs(test_folder, exist_ok=True)
 
